@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Links Social Media</title>
+</head>
+<body>
+  <div class="w-full max-w-[36.75rem] mt-14 mx-auto mb-0 py-0 px-6">
+    <div class="text-center p-[1.5rem]">
+      <img
+        class="w-28 inline"
+        src="./assets/eu.png" 
+        alt="imagem de Brian sorrindo de óculos"/>
+        <p class="font-medium text-lg mt-2">
+          @brian.rangel
+        </p>
+    </div>
+    <div 
+      class="relative w-16 my-1 mx-auto"
+      onclick="toggleMode()"
+      >
+      <button class="w-8 h-8 bg-white bg-[url(../src/assets/moon.svg)] rounded-[50%] bg-no-repeat bg-center 
+                    absolute z-[1] top-1/2 transition transform -translate-y-1/2
+                     dark:bg-[url(../src/assets/sun.svg)] dark:transition dark:transform dark:translate-x-full">
+      </button>
+      <span class="block w-16 h-6 bg-[#ffffff1a] border border-[#ffffff80] backdrop-blur-sm rounded-full">
+      </span>
+    </div>
+    <ul class="list-none flex flex-col gap-4 py-6 px-0">
+      <li>
+        <a href="#" target="_blank">Link 1</a>
+      </li>
+      <li>
+        <a href="#" target="_blank">Link 2</a>
+      </li>
+      <li>
+        <a href="#" target="_blank">Link 3</a>
+      </li>
+      <li>
+        <a href="#" target="_blank">Link 4</a>
+      </li>
+    </ul>
+    <div class="flex py-6 px-0 text-[1.5rem] justify-center">
+      <a 
+        class="p-4 hover:bg-[#ffffff33] rounded-[50%] transition-colors
+        dark:hover:bg-[#ffffff80]"
+        href="https://www.github.com/xumbreks" target="_blank">
+        <i class="ph-fill ph-github-logo"></i>
+      </a>
+      <a 
+        class="p-4 hover:bg-[#ffffff33] rounded-[50%] transition-colors
+        dark:hover:bg-[#ffffff80]"
+        href="https://www.linkedin.com/in/brianrangel" target="_blank">
+        <i class="ph-fill ph-linkedin-logo"></i>
+      </a>
+      <a 
+        class="p-4 hover:bg-[#ffffff33] rounded-[50%] transition-colors
+        dark:hover:bg-[#ffffff80]"
+        href="https://www.instagram.com/brian.rangel" target="_blank">
+        <i class="ph-fill ph-instagram-logo"></i>
+      </a>
+      <a 
+        class="p-4 hover:bg-[#ffffff33] rounded-[50%] transition-colors
+        dark:hover:bg-[#ffffff80]"
+        href="https://www.facebook.com/brianrangel.cardososantos" target="_blank">
+        <i class="ph-fill ph-facebook-logo"></i>
+      </a>  
+
+    </div>
+    <footer class="py-6 px-0 text-center text-sm">
+      Feito com ♥ por Brian
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
