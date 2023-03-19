@@ -7,9 +7,9 @@
 }
 
 body{
-  @apply h-screen sm:bg-[url(../src/assets/bg-desktop.jpeg)] bg-[url(../src/assets/bg-mobile.jpeg)] bg-no-repeat bg-top bg-cover
-  dark:bg-[url(../src/assets/bg-mobile-light.jpeg)]
-  dark:sm:bg-[url(../src/assets/bg-desktop-light.jpeg)];
+  @apply h-screen sm:bg-[url(/assets/bg-desktop.jpeg)] bg-[url(/assets/bg-mobile.jpeg)] bg-no-repeat bg-top bg-cover
+  dark:bg-[url(/assets/bg-mobile-light.jpeg)]
+  dark:sm:bg-[url(/assets/bg-desktop-light.jpeg)];
 }
 
 body *{
