@@ -2,22 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  @apply m-0 p-0 box-border;
-}
-
 body{
-  @apply h-screen sm:bg-[url(/assets/bg-desktop.jpeg)] bg-[url(/assets/bg-mobile.jpeg)] bg-no-repeat bg-top bg-cover
+  @apply font-sans text-[#FFFFFF] dark:text-black h-screen sm:bg-[url(/assets/bg-desktop.jpeg)] bg-[url(/assets/bg-mobile.jpeg)] bg-no-repeat bg-top bg-cover
   dark:bg-[url(/assets/bg-mobile-light.jpeg)]
   dark:sm:bg-[url(/assets/bg-desktop-light.jpeg)];
 }
 
-body *{
-  @apply font-sans text-[#FFFFFF] dark:text-black;
-}
-
 li a{
-  @apply flex items-center justify-center py-6 px-4 
+  @apply flex items-center justify-center py-4 gap-1
        bg-[#ffffff1a] border border-[#ffffff80]
        rounded-lg backdrop-blur-sm
        font-medium hover:bg-[#ffffff0d] hover:border-[1.5px] hover:border-white

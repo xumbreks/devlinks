@@ -1003,10 +1003,6 @@ video {
   list-style-position: outside;
 }
 
-.list-none {
-  list-style-type: none;
-}
-
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1819,10 +1815,6 @@ video {
      object-fit: scale-down;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .p-\[1\.5rem\] {
   padding: 1.5rem;
 }
@@ -1901,10 +1893,6 @@ video {
 
 .align-super {
   vertical-align: super;
-}
-
-.text-\[1\.5rem\] {
-  font-size: 1.5rem;
 }
 
 .text-lg {
@@ -2308,12 +2296,6 @@ video {
   transition-duration: 150ms;
 }
 
-.transition-colors {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -2331,22 +2313,21 @@ video {
   content: var(--tw-content);
 }
 
-* {
-  margin: 0px;
-  box-sizing: border-box;
-  padding: 0px;
-}
-
 body {
   height: 100vh;
   background-image: url(/assets/bg-mobile.jpeg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+  font-family: Inter, sans-serif;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .dark body {
   background-image: url(/assets/bg-mobile-light.jpeg);
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -2359,29 +2340,17 @@ body {
   }
 }
 
-body * {
-  font-family: Inter, sans-serif;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.dark body * {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.25rem;
   border-radius: 0.5rem;
   border-width: 1px;
   border-color: #ffffff80;
   background-color: #ffffff1a;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   font-weight: 500;
   --tw-backdrop-blur: blur(4px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -2445,10 +2414,6 @@ li a:hover {
   }
 }
 
-.hover\:bg-\[\#ffffff33\]:hover {
-  background-color: #ffffff33;
-}
-
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -2490,10 +2455,6 @@ li a:hover {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.dark .dark\:hover\:bg-\[\#ffffff80\]:hover {
-  background-color: #ffffff80;
 }
 
 @media (min-width: 640px) {
