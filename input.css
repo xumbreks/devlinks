@@ -2,17 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  @apply font-sans text-[#FFFFFF] dark:text-black h-screen sm:bg-[url(/assets/bg-desktop.jpeg)] bg-[url(/assets/bg-mobile.jpeg)] bg-no-repeat bg-top bg-cover
-  dark:bg-[url(/assets/bg-mobile-light.jpeg)]
-  dark:sm:bg-[url(/assets/bg-desktop-light.jpeg)];
+body {
+  @apply font-sans text-[#FFFFFF] h-screen dark:text-black  
+  bg-gradient-to-t from-black via-gray-900 to-black bg-no-repeat bg-top bg-cover
+  dark:bg-gradient-to-t dark:from-gray-300 dark:via-gray-100 dark:to-gray-300
 }
 
-li a{
+li a {
   @apply flex items-center justify-center py-4 gap-1
        bg-[#ffffff1a] border border-[#ffffff80]
        rounded-lg backdrop-blur-sm
        font-medium hover:bg-[#ffffff0d] hover:border-[1.5px] hover:border-white
-       transition-colors dark:bg-[#ffffff80] dark:hover:border-[1.5px] dark:hover:border-black
+       transition-colors 
+       dark:bg-[#ffffff80] dark:border-[#00000080] dark:hover:border-[1.5px] dark:hover:border-black
        dark:hover:bg-[#00000005];
 }

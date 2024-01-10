@@ -1,75 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt_br">
-<head>
-<script src="https://unpkg.com/@phosphor-icons/web"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.ico">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="dist/output.css" rel="stylesheet">
-  <title>Brian</title>
-</head>
-<body>
-  <div class="w-full max-w-[36.75rem] mt-14 mx-auto mb-0 py-0 px-6">
-    <div id="profile" class="text-center p-[1.5rem]">
-      <img
-        class="w-28 inline rounded-full"
-        src="./assets/eu9.png" 
-        alt="imagem de Brian sorrindo de óculos"/>
-        <p class="font-medium text-lg mt-2">
-          @brian.rangel
-        </p>
+  <head>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon.ico"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <title>Brian</title>
+  </head>
+  <body>
+    <div class="w-full h-screen max-w-[36.75rem] pt-14 mx-auto px-6">
+      <div id="profile" class="text-center p-[1.5rem]">
+        <img
+          class="w-28 inline rounded-full"
+          src="./assets/eu9.png"
+          alt="imagem de Brian sorrindo de óculos"
+        />
+        <p class="font-medium text-lg mt-2">@brian.rangel</p>
+      </div>
+      <div class="relative w-16 my-1 mx-auto" onclick="toggleMode()">
+        <button
+          class="w-8 h-8 bg-white bg-[url(/assets/moon.svg)] rounded-[50%] bg-no-repeat bg-center absolute z-[1] top-1/2 transition transform -translate-y-1/2 dark:bg-[url(/assets/sun.svg)] dark:transition dark:transform dark:translate-x-full"
+        ></button>
+        <span
+          class="block w-16 h-6 bg-[#ffffff1a] border border-[#ffffff80] backdrop-blur-sm rounded-full"
+        >
+        </span>
+      </div>
+      <ul class="flex flex-col gap-4 py-6">
+        <li>
+          <a href="https://portifolio-brian.vercel.app" target="_blank">
+            <i class="ph ph-briefcase text-lg"></i>
+            Portifolio
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/brianrangel.dev" target="_blank">
+            <i class="ph ph-instagram-logo text-lg"></i>
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/brianrangel" target="_blank">
+            <i class="ph ph-linkedin-logo text-lg"></i>
+            Linkedin
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/xumbreks" target="_blank">
+            <i class="ph ph-github-logo text-lg"></i>
+            Github
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/351910025357" target="_blank">
+            <i class="ph ph-whatsapp-logo text-lg"></i>
+            Whatsapp
+          </a>
+        </li>
+      </ul>
+      <footer class="py-6 px-0 text-center text-sm">
+        Feito com ♥ por Brian
+      </footer>
     </div>
-    <div 
-      class="relative w-16 my-1 mx-auto"
-      onclick="toggleMode()"
-      >
-      <button class="w-8 h-8 bg-white bg-[url(/assets/moon.svg)] rounded-[50%] bg-no-repeat bg-center 
-                    absolute z-[1] top-1/2 transition transform -translate-y-1/2
-                     dark:bg-[url(/assets/sun.svg)] dark:transition dark:transform dark:translate-x-full">
-      </button>
-      <span class="block w-16 h-6 bg-[#ffffff1a] border border-[#ffffff80] backdrop-blur-sm rounded-full">
-      </span>
-    </div>
-    <ul class="flex flex-col gap-4 py-6">
-      <li>
-        <a href="https://portifolio-brian.vercel.app" target="_blank">
-          <i class="ph ph-briefcase text-lg"></i>
-          Portifolio
-        </a>
-      </li>
-      <li>
-        <a href="https://instagram.com/brianrangel.dev" target="_blank">
-          <i class="ph ph-instagram-logo text-lg"></i>
-          Instagram
-        </a>
-      </li>
-      <li>
-        <a href="https://linkedin.com/in/brianrangel" target="_blank">
-          <i class="ph ph-linkedin-logo text-lg"></i>
-          Linkedin
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/xumbreks" target="_blank">
-          <i class="ph ph-github-logo text-lg"></i>
-          Github
-        </a>
-      </li>
-      <li>
-        <a href="https://wa.me/351910025357" target="_blank">
-          <i class="ph ph-whatsapp-logo text-lg"></i>
-          Whatsapp
-        </a>
-      </li>
-    </ul>
-    <footer class="py-6 px-0 text-center text-sm">
-      Feito com ♥ por Brian
-    </footer>
-  </div>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
