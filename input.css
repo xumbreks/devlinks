@@ -4,7 +4,7 @@
 
 body {
   @apply font-sans text-[#FFFFFF] h-screen dark:text-black  
-  bg-gradient-to-t from-black via-gray-900 to-black bg-no-repeat bg-top bg-cover
+  bg-gradient-to-t from-black via-gray-900 to-black
   dark:bg-gradient-to-t dark:from-gray-300 dark:via-gray-100 dark:to-gray-300
 }
 
