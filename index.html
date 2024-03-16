@@ -22,13 +22,20 @@
   </head>
   <body>
     <div class="w-full h-screen max-w-[36.75rem] md:pt-14 mx-auto px-6">
-      <div id="profile" class="text-center p-[1.5rem]">
+      <div class="text-center p-[1.5rem] flex justify-center gap-5">
         <img
-          class="w-28 inline rounded-full"
-          src="./assets/eu9.png"
+          class="w-28 rounded-full border-2 border-white/70"
+          src="./assets/brian.png"
           alt="imagem de Brian sorrindo de óculos"
         />
-        <p class="font-medium text-lg mt-2">Brian Rangel</p>
+        <div class="flex flex-col justify-center items-start">
+          <span class="font-medium text-lg"
+            ><span class="text-[#FFD700]">Brian</span> Rangel 👋🏻</span
+          >
+          <span class="font-medium text-lg"
+            >Web <span class="text-[#FFD700]">Developer 👨🏻‍💻</span></span
+          >
+        </div>
       </div>
       <ul class="flex flex-col gap-2 py-4 md:gap-4 md:py-6">
         <li>
@@ -62,7 +69,11 @@
           </a>
         </li>
       </ul>
-      <footer class="py-6 text-center text-sm">Feito com ♥ por Brian</footer>
+      <footer
+        class="py-6 text-center text-sm font-medium underline underline-offset-2"
+      >
+        Feito com <span class="text-[#FFD700]">♥</span> por Brian
+      </footer>
     </div>
   </body>
 </html>

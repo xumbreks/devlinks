@@ -3,9 +3,8 @@
 @tailwind utilities;
 
 body {
-  @apply font-sans text-[#FFFFFF] h-screen dark:text-black  
+  @apply font-sans text-[#FFFFFF]
   bg-gradient-to-t from-black via-gray-900 to-black
-  dark:bg-gradient-to-t dark:from-gray-300 dark:via-gray-100 dark:to-gray-300
 }
 
 li a {
@@ -14,6 +13,4 @@ li a {
        rounded-lg backdrop-blur-sm
        font-medium hover:bg-[#ffffff0d] hover:border-[1.5px] hover:border-white
        transition-colors 
-       dark:bg-[#ffffff80] dark:border-[#00000080] dark:hover:border-[1.5px] dark:hover:border-black
-       dark:hover:bg-[#00000005];
 }
